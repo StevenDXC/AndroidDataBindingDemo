@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DataBindingDemo</string>
+    <string name="retry">retry</string>
+</resources>

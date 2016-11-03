@@ -13,4 +13,6 @@
 · [RxBus](https://github.com/AndroidKnife/RxBus)
 
 
+Demo:
 
+![image](https://github.com/StevenDXC/AndroidDataBindingDemo/blob/master/art/databinding.gif)

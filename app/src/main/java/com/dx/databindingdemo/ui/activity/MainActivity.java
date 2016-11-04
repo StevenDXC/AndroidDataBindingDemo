@@ -23,8 +23,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+        setSupportActionBar(dataBinding.toolbar);
+
         dataBinding.listRepo.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        dataBinding.listRepo.addItemDecoration(new LinearLayoutColorDivider(getResources(),0xff888888,R.dimen.default_divider_size,LinearLayoutManager.VERTICAL));
+        dataBinding.listRepo.addItemDecoration(new LinearLayoutColorDivider(getResources(),0xffcccccc,R.dimen.default_divider_size,LinearLayoutManager.VERTICAL));
         dataBinding.listRepo.setAdapter(new RepoListAdapter());
 
         MainViewModel viewModel = new MainViewModel();

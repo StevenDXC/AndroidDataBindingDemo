@@ -28,6 +28,7 @@ public class RepoListViewModel extends BaseObservable{
 
         Intent intent = new Intent(view.getContext(), RepoActivity.class);
         intent.putExtra("url",repoListModel.html_url);
+        intent.putExtra("name",repoListModel.name);
         view.getContext().startActivity(intent);
 
     }
